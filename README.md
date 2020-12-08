@@ -8,11 +8,11 @@ Basecalling was performed with the MinKNOW software (v.19.05.0) using the Guppy 
 `minimap2 -Yax map-ont $REFERENCE $FASTQ > $FILE.sam`
 
 Alignments converted to sorted, indexed BAM format using samtools (v.1.10)
-
-`samtools view -Sb $FILE.sam > $FILE.bam`
-`samtools sort -@ 8 -m 1G $FILE.bam -o $FILE.sorted.bam`
-`samtools index $FILE.sorted.bam`
-
+```
+    samtools view -Sb $FILE.sam > $FILE.bam
+    samtools sort -@ 8 -m 1G $FILE.bam -o $FILE.sorted.bam
+    samtools index $FILE.sorted.bam
+```
 ## On-target Read Quantification
 
 ## Repeat Copy Number Distribution Histogram and Genotype Estimation
