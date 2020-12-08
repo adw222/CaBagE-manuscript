@@ -19,7 +19,13 @@ Alignments converted to sorted, indexed BAM format using samtools (v.1.10)
 
 For CaBaGE targets containing short tandem repeats, the repeat copy number can be quantified with 
 
-`repeat_estimator.py $PARAMETERS` 
+`repeat_estimator.py --bam #path to BAM file\
+                     --ref #path to reference genome\
+                     --locus #reference location of repeat (example: Chr9:27573480-27573551)\
+                     --repeat_unit #example: "CAG"\
+                     --alignment_buffer #length of query sequence flanking repeat (default 1000bp)\
+                     --id #Sample ID\
+                     --allele-count #expected number of alleles (default diploid)` 
 
 after [installation](#Installation)
 
