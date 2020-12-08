@@ -13,7 +13,14 @@ Alignments converted to sorted, indexed BAM format using samtools (v.1.10)
     samtools sort -@ 8 -m 1G $FILE.bam -o $FILE.sorted.bam
     samtools index $FILE.sorted.bam
 ```
-## On-target Read Quantification
+## On-Target Read Quantification
+On-Target reads are defined as any read (MapQ >=60) that overlaps the region flanked by guideRNAs by at least one base pair:
+
+`samtools view -c -q 60 $FILE.sorted.bam [*chr:start-end*]`
+
+Spanning reads are defined as any read that overlaps the region flanked by guideRNAs by at least 90%:
+
+`bedtools coverage -f 0.9 -a $REGIONS.bed -b $FILE.sorted.bam -counts`
 
 ## Repeat Copy Number Distribution Histogram and Genotype Estimation
 
