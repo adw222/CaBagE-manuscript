@@ -1,0 +1,9 @@
+scipy
+pyfaidx
+numpy
+pandas
+matplotlib
+scikit-learn
+scikit-bio
+biopython
+pysam
