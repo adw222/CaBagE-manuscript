@@ -30,14 +30,15 @@ from pyfaidx import Fasta
 #Hg19: chr9:27573483-27573544
 #Hg38: chr9:chr9:27573485-27573546
 parser = argparse.ArgumentParser(description='find alignments that span a locus of interest')
-parser.add_argument('--bam', dest='bam', help='The input bam file')
-parser.add_argument('--ref', dest='ref', help='The indexed reference fasta file')
+parser.add_argument('--bam', dest='bam', help='The input bam file',
+        required=True)
+parser.add_argument('--ref', dest='ref', help='The indexed reference fasta file',
+        required=True)
 parser.add_argument('--locus', dest='locus', help='Postition of STR repeat in reference , e.g.: chr9:27573480-27573551', default = "chr9:27573485-27573546")
 parser.add_argument('--repeat_unit', dest='repeat_unit', help='Repeated sequence of interest, e.g.: CCCCGG', default = "CCCCGG")
 parser.add_argument('--alignment_buffer', dest='buf', default = "1000", help='buffer for alignment on either side of target, will vary by guide design')
 parser.add_argument('--id', dest='id', default = "ND13803", help='Sample ID')
 parser.add_argument('--allele_count', dest='ac', help='number of alleles present in indiviudal at locus of interest', default = "2")
-args = parser.parse_args()
 args = parser.parse_args()
 
 

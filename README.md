@@ -21,6 +21,8 @@ For CaBaGE targets containing short tandem repeats, the repeat copy number can b
 
 `repeat_estimator.py $PARAMETERS` 
 
+after [installation](#Installation)
+
 This script generates PLOT and estimate of STATs for cluster estimate with default copy number = 2
 
 
@@ -29,8 +31,12 @@ This script generates PLOT and estimate of STATs for cluster estimate with defau
 The wet lab protocol for target enrichment with CaBaGE is described in detail in the [Wiki](https://github.com/adw222/CaBagE-manuscript/wiki)
 
 
+# Installation
 
+To install all dependencies use conda:
 
-
-
-
+```
+conda create -y --name cabage --file requirements.txt -c bioconda -c anaconda
+conda activate cabage
+python repeat_example.py
+```
