@@ -38,7 +38,7 @@ This script generates a histogram showing the distribution of repeat copy number
 The wet lab protocol for target enrichment with CaBaGE is described in detail in the [Wiki](https://github.com/adw222/CaBagE-manuscript/wiki)
 
 
-# Installation
+## Installation
 
 To install all dependencies use conda:
 
