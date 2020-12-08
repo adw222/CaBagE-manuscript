@@ -29,7 +29,7 @@ For CaBaGE targets containing short tandem repeats, the repeat copy number can b
                      
                      --alignment_buffer #length of query sequence flanking repeat (default 1000bp)
                      
-                     --id #Sample ID`
+                     --id #Sample ID
                      
                      --allele-count #expected number of alleles (default diploid)` 
 
