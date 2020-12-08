@@ -15,7 +15,7 @@ Alignments converted to sorted, indexed BAM format using samtools (v.1.10)
 
 ## On-target Read Quantification
 
-## Repeat Copy Number Distribution Histogram
+## Repeat Copy Number Distribution Histogram and Gonetype Estimation
 
 For CaBaGE targets containing short tandem repeats, the repeat copy number can be quantified with 
 
