@@ -28,7 +28,7 @@ For CaBaGE targets containing short tandem repeats, the repeat copy number can b
 ```
 repeat_estimator.py  --bam \ #path to sorted BAM file
     --ref \ #path to reference genome
-    --locus \ #reference location of repeat (example: Chr9:27573480-27573551)
+    --locus \ #reference location of repeat (example: chr9:27573480-27573551)
     --repeat_unit \ #example: "CAG"
     --alignment_buffer \ #length of query sequence flanking repeat (default 1000bp)
     --id \ #sample ID
