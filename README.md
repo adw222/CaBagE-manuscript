@@ -30,7 +30,7 @@ repeat_estimator.py  --bam #path to sorted BAM file
 
 after [installation](#Installation)
 
-This script generates PLOT and estimate of STATs for cluster estimate with default copy number = 2
+This script generates a histogram showing the distribution of repeat copy number across CaBagE enriched sequencing reads and also estimates copy number genotypes using a Gaussian Mixure Model with default copy number = 2
 
 
 ## Wet Lab Protocol
