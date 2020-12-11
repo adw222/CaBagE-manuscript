@@ -54,3 +54,14 @@ conda create -y --name cabage --file requirements.txt -c bioconda -c anaconda
 conda activate cabage
 python repeat_estimator.py
 ```
+### Dependancies
+
+scipy 1.4.1
+pyfaidx 0.5.9.1
+numpy 1.17.3
+pandas 1.1.5
+matplotlib 3.3.3
+scikit-learn 0.23.2
+scikit-bio 0.5.6
+biopython 1.78
+pysam 0.16.0.1
