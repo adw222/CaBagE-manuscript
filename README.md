@@ -56,12 +56,12 @@ python repeat_estimator.py
 ```
 ### Dependancies
 
-    scipy 1.4.1
-    pyfaidx 0.5.9.1
-    numpy 1.17.3
-    pandas 1.1.5
-    matplotlib 3.3.3
-    scikit-learn 0.23.2
-    scikit-bio 0.5.6
-    biopython 1.78
-    pysam 0.16.0.1
+    scipy v1.4.1
+    pyfaidx v0.5.9.1
+    numpy v1.17.3
+    pandas v1.1.5
+    matplotlib v3.3.3
+    scikit-learn v0.23.2
+    scikit-bio v0.5.6
+    biopython v1.78
+    pysam v0.16.0.1
